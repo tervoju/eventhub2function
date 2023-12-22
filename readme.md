@@ -1,6 +1,14 @@
 
 # Azure function to get data from event hub service using SAS
 
+a function that receives a event from the (external) event hub and sends that event to the 
+event hub in own tenant 
+
+
+things to check:
+
+- difference between connection string and "default" credential config to connect to a event hub
+- .env and local.settings.json 
 
 
 https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=node-v3%2Cpython-v2%2Cisolated-process&pivots=programming-language-python
@@ -11,7 +19,7 @@ https://learn.microsoft.com/en-us/azure/architecture/serverless/event-hubs-funct
 ## debug issue 
 
 ```
-apt install python3.10-venv
+apt install python3.XX-venv
 ```
 
 requires also functions core tools 
